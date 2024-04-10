@@ -1,0 +1,642 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.hero {
+  /* position: relative; */
+  height: 600px;
+  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1493770348161-369560ae357d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+  overflow: hidden;
+}
+
+/* .temp {
+} */
+
+.nav {
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 70px;
+  overflow: hidden;
+}
+
+.nav a {
+  text-decoration: none;
+  color: rgb(255, 0, 34);
+  font-size: 18px;
+  padding: 6px;
+  border-radius: 2px;
+}
+.brand {
+  color: rgb(255, 0, 64);
+  font-family: cursive;
+  font-size: 24px;
+  font-weight: 900;
+  text-decoration: rgb(255, 0, 64) solid underline;
+}
+.brand:hover {
+  cursor: pointer;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  border: 1px solid rgb(255, 0, 34);
+  background-color: rgb(255, 0, 34);
+  color: white;
+}
+.reserve-btn {
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.btn {
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(255, 0, 64);
+  color: white;
+}
+.btn:hover {
+  background-color: rgb(216, 19, 45);
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 10px rgba(233, 18, 36, 0.411);
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  filter: brightness(100%);
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero-section h1,
+h2 {
+  color: rgb(253, 2, 36);
+  font-size: 50px;
+  font-family: ojuju;
+  font-weight: 700;
+}
+.hero-btn {
+  margin-top: 25px;
+  padding: 10px;
+  font-size: larger;
+}
+.special-section {
+  margin-top: 50px;
+  text-align: center;
+}
+.special-heading {
+  font-size: 45px;
+  font-weight: 600;
+  color: rgb(255, 0, 43);
+}
+.specials {
+  display: flex;
+}
+.special-card {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 550px;
+  margin: 10px 10px;
+  border-radius: 10px;
+}
+.box1 {
+  width: 90%;
+  height: 70%;
+  background-image: url("https://media.istockphoto.com/id/815263664/photo/traditional-mexican-cocktail-spicy-michelada.jpg?s=1024x1024&w=is&k=20&c=Evf-5yjYVDFW_u3MZr8vtcQZVH-8P8QLm7wZMoDX9BQ=");
+  background-size: cover;
+  border-radius: 10px 10px 0px 0px;
+}
+.box1:hover,
+.box2:hover,
+.box3:hover {
+  zoom: 1.5;
+  opacity: 0.7;
+}
+.box2 {
+  width: 90%;
+  height: 70%;
+  background-image: url("https://images.unsplash.com/photo-1526318896980-cf78c088247c?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.box3 {
+  width: 90%;
+  height: 70%;
+  background-image: url("https://media.istockphoto.com/id/815263664/photo/traditional-mexican-cocktail-spicy-michelada.jpg?s=1024x1024&w=is&k=20&c=Evf-5yjYVDFW_u3MZr8vtcQZVH-8P8QLm7wZMoDX9BQ=");
+  background-size: cover;
+  border-radius: 10px 10px 0px 0px;
+}
+.box-btn {
+  padding: 28px;
+  width: 90%;
+  border-radius: 0px 0px 10px 10px;
+  font-size: 20px;
+}
+.speciality {
+  font-size: 28px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  margin-top: 10px;
+}
+.box-content {
+  text-align: center;
+}
+
+.our-menu {
+  display: flex;
+  margin: 10px 10px 5px 10px;
+  /* margin-left: 10px; */
+  flex-direction: column;
+}
+.our-menu h2 {
+  text-decoration: underline;
+  text-align: center;
+  margin: 20px;
+}
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu img {
+  padding: 2px;
+  width: 24%;
+  height: 300px;
+}
+.menu img:hover {
+  scale: 1.025;
+  opacity: 0.7;
+}
+
+.booking {
+  background-image: url("https://images.unsplash.com/photo-1483274816418-3975509c8f78?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXxmNjdOM09VZ09tQXx8ZW58MHx8fHx8");
+  background-size: cover;
+
+  margin: 0px 10px 0px 10px;
+  padding: 100px 0 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  background-color: rgb(214, 197, 199);
+  justify-content: center;
+}
+
+.inputs input {
+  font-size: 20px;
+  margin-left: 10px;
+  padding: 15px;
+  border: 2px solid white;
+  background-color: white;
+  color: rgb(255, 0, 55);
+}
+.inputs input:hover {
+  border: 2px solid rgb(255, 0, 43);
+}
+.book-table {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 24px;
+  background-color: rgba(255, 0, 34, 0.89);
+  color: rgb(255, 255, 255);
+}
+.book-table:hover {
+  color: white;
+}
+
+footer {
+  margin-top: 5px;
+  /* overflow: hidden; */
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("https://media.istockphoto.com/id/1336601313/photo/top-view-of-indian-herbal-masala-chai-or-traditional-beverage-tea-with-milk-and-spices-kerala.webp?b=1&s=170667a&w=0&k=20&c=9XJPNhwXruBAWmTdMBbttc3MhD-xhtSpHRb9YGpZbLs=");
+  background-size: cover;
+  padding: 40px 0px;
+  color: rgb(241, 237, 237);
+}
+.brand-footer {
+  font-size: 50px;
+  font-family: cursive;
+  /* color: rgb(247, 4, 44); */
+  text-decoration: underline;
+}
+.icons {
+  margin-top: 20px;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+}
+.icons i {
+  padding: 20px;
+}
+.icons i:hover {
+  scale: 1.2;
+}
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+.address {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+  margin-right: 20px;
+}
+.divider {
+  font-weight: 400px;
+  border: 1.5px solid white;
+  height: 100px;
+  margin-top: 10px;
+}
+.time {
+  /* color: rgb(255, 0, 21); */
+  text-align: left;
+  display: flex;
+  margin-left: 20px;
+  flex-direction: column;
+  row-gap: 4px;
+}
+
+.copyright {
+  margin-top: 40px;
+  color: rgb(189, 189, 189);
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .specials {
+    flex-direction: column;
+    align-items: center;
+  }
+  .special-card {
+    width: 90%;
+  }
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero h2 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  .special-section {
+    margin-top: 20px;
+  }
+
+  .our-menu {
+    margin-top: 20px;
+  }
+}
+
+/* galary page css */
+
+.hero-galary {
+  width: 100vw;
+  height: 80vh;
+  background-image: url(images/main.jpg);
+}
+.galary-images {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.galary-images h3 {
+  font-size: 26px;
+  color: rgb(255, 255, 255);
+  margin: 10px 50px;
+  background: linear-gradient(120deg, rgb(255, 0, 64), rgb(0, 110, 255));
+}
+.display-images {
+  margin: 30px;
+}
+.outdoor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.outdoor img {
+  width: 48%;
+  height: 350px;
+}
+.images img {
+  width: 24%;
+  height: 350px;
+  margin: 4px;
+}
+.images img:hover {
+  scale: 1.025;
+  opacity: 0.7;
+}
+
+.galary-heading {
+  font-size: 24px;
+  font-family: cursive;
+  color: rgb(255, 0, 21);
+  margin: 20px;
+  text-decoration: double underline;
+}
+
+/* product page */
+
+.hero-menu {
+  width: 100vw;
+  height: 80vh;
+  background-image: url("https://images.unsplash.com/photo-1558274849-f9fa5f16dee8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fG1lbnV8ZW58MHwwfDB8fHww");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.menu-images {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.menu-images h3 {
+  font-size: 26px;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(120deg, rgb(255, 0, 64), rgb(0, 110, 255));
+  padding: 5px;
+  /* text-decoration: double underline; */
+}
+.menu-images {
+  margin: 30px;
+}
+.drinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.images img {
+  width: 24%;
+  height: 350px;
+  margin: 4px;
+}
+.images img:hover {
+  scale: 1.025;
+  opacity: 0.7;
+}
+
+.menu-heading {
+  font-size: 24px;
+  font-family: cursive;
+  color: rgb(255, 0, 21);
+  margin: 20px;
+  text-decoration: double underline;
+}
+.bottom {
+  color: white;
+  padding: 5px;
+  /* width: 70%; */
+  background: linear-gradient(120deg, rgb(255, 0, 64), rgb(0, 110, 255));
+}
+/* contact us page css */
+
+.hero-contact {
+  width: 100vw;
+  height: 80vh;
+  background-image: url("https://images.unsplash.com/photo-1596524430615-b46475ddff6e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29udGFjdCUyMHVzfGVufDB8fDB8fHww");
+  background-size: cover;
+}
+.main {
+  text-align: center;
+  margin: 40px 10px 30px 10px;
+}
+.contact-container {
+  display: flex;
+  background-image: url(https://images.unsplash.com/photo-1567880905822-56f8e06fe630?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D);
+  padding: 20px;
+}
+
+.enquiry {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.enquiry-heading {
+  font-size: 28px;
+  color: rgb(255, 0, 55);
+  font-family: cursive;
+  text-decoration: underline;
+}
+.enquiry form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: center;
+  margin-top: 25px;
+  color: rgb(31, 98, 156);
+}
+.enquiry form input,
+textarea {
+  padding: 12px;
+  width: 80%;
+  border-radius: 20px;
+  border: 1px solid rgb(255, 255, 255);
+  font-size: 16px;
+  background: transparent;
+  color: rgb(252, 13, 65);
+}
+.enquiry form input:hover,
+textarea:hover {
+  /* background-color: rgb(255, 0, 43); */
+  border: 1.5px solid rgb(252, 13, 65);
+  /* color: white; */
+}
+.enquiry-btn {
+  padding: 18px;
+  font-size: 18px;
+  width: 80%;
+  border-radius: 20px;
+
+  margin-top: 20px;
+}
+
+/* about us page */
+
+.hero-about {
+  width: 100vw;
+  height: 80vh;
+  background-image: url("https://media.istockphoto.com/id/1261597991/photo/about-us-presentation-service-delivery-and-positive-feedback-concept-black-painted-wood-and.jpg?s=1024x1024&w=is&k=20&c=vjTN22IEbqWeviLU1FsHa5lBEZAxVW3G73IanhwyKlU=");
+  background-size: cover;
+}
+.cards-about {
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid red;
+}
+.about-cafe {
+  display: flex;
+
+  flex-direction: column;
+  width: 30%;
+}
+.about-img {
+  width: 30%;
+}
+.about-img img {
+  width: 100%;
+  border: 1px solid rgb(255, 0, 43);
+}
+.about-img img:hover {
+  scale: 1.025;
+  opacity: 0.7;
+}
+.features {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.features li {
+  color: red;
+  padding: 10px;
+  font-size: 20px;
+}
+.features li:hover {
+  text-decoration: underline;
+}
+
+.chefs {
+  text-align: center;
+  margin: 20px;
+  border: 1px solid rgb(255, 0, 34);
+}
+.chef-container {
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+}
+.chef-card img {
+  height: 60vh;
+}
+.chef-card img:hover {
+  scale: 1.025;
+  opacity: 0.8;
+  border: 1px solid red;
+}
+.chef-name {
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600px;
+  font-family: cursive;
+  color: rgb(255, 0, 34);
+}
+.chef-icons {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 24px;
+}
+.chef-icons i:hover {
+  scale: 1.25;
+}
+@media screen and (max-width: 480px) {
+  .cards-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-cafe {
+    width: 80%;
+  }
+  .features {
+    margin-top: 20px;
+    width: 80%;
+  }
+  .about-img {
+    height: auto;
+    width: 90%;
+  }
+  .chef-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .chef-card {
+    width: 90%;
+    margin: 10px 2px;
+  }
+  .chef-card img {
+    width: 60%;
+  }
+  .location {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .location h3,
+  p {
+    text-align: center;
+  }
+  .location hr {
+    display: none;
+  }
+  /* index page */
+  .menu {
+    flex-direction: column;
+  }
+  .menu img {
+    width: 100%;
+  }
+  .booking {
+    margin: 10px 0px;
+    padding: 10px;
+  }
+  .inputs input {
+    width: 90%;
+  }
+  .inputs {
+    width: 100%;
+  }
+  footer {
+    margin: 0px;
+    padding: 0;
+  }
+  .brand-footer {
+    margin: 0;
+    padding: 0;
+  }
+}
